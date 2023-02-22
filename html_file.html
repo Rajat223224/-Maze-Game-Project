@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maze Game</title>
+    <style>
+      /* Style the maze grid */
+      #maze {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 1px;
+      }
+
+      /* Style the maze cells */
+      .cell {
+        background-color: white;
+      }
+
+      /* Style the start and end cells */
+      .start {
+        background-color: green;
+      }
+      .end {
+        background-color: red;
+      }
+
+      /* Style the player */
+      #player {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Maze Game</h1>
+    <div id="maze"></div>
+    <script src="maze.js"></script>
+  </body>
+</html>
